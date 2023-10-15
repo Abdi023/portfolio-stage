@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+            link(rel="stylesheet", href="./css/style.css")
+            link(rel="preconnect" href="https://fonts.googleapis.com")
+            link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+            link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet")
+            script(src="https://kit.fontawesome.com/be03e873de.js" crossorigin="anonymous" defer)
+            script(src="./js/toggle.js" defer) 
+            script(src="./js/modal.js" defer) 
+            title Document | #{title}
+        
+    body 
+        include _header
+
+        block content
+            h1 this is placeholder content
+
+        include _footer
+
+
+    

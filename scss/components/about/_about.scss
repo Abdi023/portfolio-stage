@@ -1,0 +1,156 @@
+@use "../../abstract/colors";
+
+.about{
+    padding: 4rem;
+    min-height: 100vh;
+
+    &__geheelBox{
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+    
+    &__titleImage {
+        background-image: url('../images/backgroundImages/programming.avif');
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__overmijHeader {
+        color: colors.$bs-gray-100;
+        font-size: 300%;
+    }
+
+    &__overmyBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: wrap;
+    }
+
+    &__overmySamenvatting{
+        width: 70ch;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+        flex-wrap: wrap;
+    }
+
+    &__imagebox{
+        width: 30rem;
+        height: 30rem;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: .8rem;
+    }
+
+    &__skills{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &skillsHeader{
+
+        &--h3{
+
+        }
+    }
+
+    &__listenBox{
+
+    }
+
+    &__skillsArticle{
+
+    }
+
+    &__skillsUl{
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    &__skillsList{
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__meerOvermij{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-wrap: wrap;
+        width: 100%;
+        &--paragraph{
+            width: 70%;
+            
+        }
+    }
+
+    &__kennis{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    &__h1Card {
+        font-size: 200%;
+        text-decoration: underline;
+        text-underline-offset: 2rem;
+        // box-shadow: .1rem .1rem .01rem rgba(0,0,0,0.1);
+    }
+
+    &__cardBox {
+        width: 60%;
+    }
+
+    &__ulCard {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &__listCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        box-shadow: .2rem .2rem .8rem rgba(0,0,0,0.4);
+        width: 16rem;
+        padding: 2rem;
+        // cursor: pointer;
+
+        &:hover {
+            transform: scale(1.04) rotate(-6deg)  scale(1.04);
+        }
+    }
+
+}

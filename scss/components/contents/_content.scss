@@ -1,0 +1,48 @@
+@use "../../abstract/colors";
+@use "../../abstract/mixins";
+
+.main {
+    background: colors.$background--contentMain;
+    
+    .content{
+        background-image: url('../images/backgroundImages/3.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;        
+         
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            
+
+            &__banner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                
+                &--h1{
+                    font-size: 350%;
+                    font-weight: 700;
+                    color: colors.$color--headerNavbar;
+                }
+    
+                &--h5{
+                    font-size: 180%;
+                    font-weight: 500;
+                    color: colors.$color--headerNavbar;
+                }                
+            }
+
+    
+            
+        }
+           
+        
+    }
+
+}

@@ -1,0 +1,28 @@
+@use '../../abstract/mixins';
+@use '../../abstract/colors';
+.footer{
+    padding: 4rem;
+    @include mixins.flexCenter;
+    flex-direction: column;
+    gap: 4rem;
+    background: colors.$background--contentMain;
+    
+    &__ul {
+        @include mixins.flexCenter;
+        gap: 8rem;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    &__li {
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    &__i {
+        text-decoration: none;
+        color: black;
+
+        
+    }
+}

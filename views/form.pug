@@ -1,0 +1,24 @@
+extends base
+
+block content
+    main.main
+        section.formSection
+
+
+            h1 Contact me
+
+            article.formSection__box
+                form.formSection__form(action="")
+                        label.formSection__label(for="") username
+                            input.formSection__input(type="text" placeholder="Name...")
+
+                        label.formSection__label(for="") Email
+                            input.formSection__input(type="email", name="" placeholder="johan@example.com...")
+
+                        label.formSection__label(for="") Subject
+                            input.formSection__input(type="text" placeholder="Subject......")
+
+                   
+                        label.formSection__label(for="") Message
+                            textarea.formSection__textarea(name="")
+                        button.formSection__button Submit

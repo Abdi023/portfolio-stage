@@ -1,0 +1,20 @@
+@use './colors';
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.9rem;
+    background-color: colors.$background--body;
+    color: #777;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
