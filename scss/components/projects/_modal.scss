@@ -16,7 +16,7 @@
     --game-color-almost-sifu: rgba(34, 40, 222, 0.2);
     --game-color-almost-legion: rgba(235, 83, 83, 0.2);
     --game-color-almost-rocket: rgba(19, 126, 213, 0.2);
-    --game-color-almost-miles: rgba(128, 128, 128, 0.2);
+    --game-color-almost-miles: rgba(125, 17, 188, 0.2);
 }
 .modal{
     width: 80vw;
@@ -38,7 +38,7 @@
 }
   
 .modal_figure--pakket1{
-    background: var(--game-color-red);
+    background: var(--game-color-less-sifu);
 }
   
 .modal_figure--pakket2{
@@ -55,11 +55,11 @@
 }
 
 .modal_figure--pakket5{
-    background: var(--game-color-aqua);
+    background: var(--game-color-almost-legion);
 }
 
 .modal_figure--pakket6{
-    background: var(--game-color-pink);   
+    background: var(--game-color-almost-miles);   
 }
   
 .modal_image{
@@ -86,13 +86,13 @@
 }
   
 .modal_text{
-    font-size: 70%;
+    font-size: 82%;
     font-weight: 400;
     line-height: 1.5;
 }
   
 .modal_link{
-    font-size: 70%;
+    font-size: 80%;
 }
   
 .modal_button{
@@ -109,7 +109,7 @@
 }
   
 .modal_button--pakket1{
-    background: var(--game-color-red);
+    background: var(--game-color-less-sifu);
 }
   
 .modal_button--pakket2{
@@ -125,11 +125,11 @@
 }
 
 .modal_button--pakket5{
-    background: var(--game-color-aqua);
+    background: var(--game-color-almost-legion);
 }
 
 .modal_button--pakket6{
-    background: var(--game-color-pink);
+    background: var(--game-color-almost-miles);
 }
   
 .modal_button:hover{
@@ -176,11 +176,11 @@
 }
 
 .product--pakket5:after{
-    background:var(--game-color-less-rocket)  ;
+    background:var(--game-color-almost-legion)  ;
 }
 
 .product--pakket6:after{
-    background:var(--game-color-less-legion) ;
+    background:var(--game-color-almost-miles) ;
 }
   
 .product_figure{
@@ -237,7 +237,7 @@
 }
 
 .product_figure--pakket6:after{
-    background: var(--game-color-almost-sifu);
+    background: var(--game-color-almost-miles);
 }
   
 .product_image{
@@ -255,7 +255,7 @@
 }
   
 .product_section--pakket1{
-    background: var(--game-color-red);
+    background: var(--game-color-less-sifu);
 }
   
 .product_section--pakket2{
@@ -271,11 +271,11 @@
 }
 
 .product_section--pakket5{
-    background: var(--game-color-pink);
+    background: var(--game-color-almost-legion);
 }
 
 .product_section--pakket6{
-    background: var(--game-color-aqua);
+    background: var(--game-color-almost-miles);
 }
   
 

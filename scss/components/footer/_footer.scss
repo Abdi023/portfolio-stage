@@ -26,3 +26,19 @@
         
     }
 }
+
+@media screen and (max-width: 50rem) {
+    .footer {
+
+        &__ul{
+            @include mixins.flexCenter;
+            gap: 3rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        &__i{
+            font-size: 3rem;
+        }
+    }
+}

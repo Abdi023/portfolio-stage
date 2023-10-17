@@ -3,22 +3,19 @@ extends base
 block content
     main.main
         section.formSection
-
-
             h1 Contact me
-
             article.formSection__box
-                form.formSection__form(action="")
-                        label.formSection__label(for="") username
-                            input.formSection__input(type="text" placeholder="Name...")
+                form.formSection__form(action="/contact" method="POST")
+                    label.formSection__label(for="username") Username
+                        input.formSection__input(type="text" name="username" placeholder="Name...")
 
-                        label.formSection__label(for="") Email
-                            input.formSection__input(type="email", name="" placeholder="johan@example.com...")
+                    label.formSection__label(for="email") Email
+                        input.formSection__input(type="email" name="email" placeholder="johan@example.com...")
 
-                        label.formSection__label(for="") Subject
-                            input.formSection__input(type="text" placeholder="Subject......")
+                    label.formSection__label(for="subject") Subject
+                        input.formSection__input(type="text" name="subject" placeholder="Subject......")
 
-                   
-                        label.formSection__label(for="") Message
-                            textarea.formSection__textarea(name="")
-                        button.formSection__button Submit
+                    label.formSection__label(for="message") Message
+                        textarea.formSection__textarea(name="message")
+                    button.formSection__button(type="submit") Submit
+

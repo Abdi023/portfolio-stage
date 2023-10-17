@@ -5,6 +5,7 @@ const viewsRoutes = require('./Routes/viewsRoutes');
 
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
 
 // Development logging
 if(process.env.NODE_ENV === 'development') {
@@ -22,6 +23,7 @@ app.use('/', viewsRoutes);
 app.use('/about', viewsRoutes);
 app.use('/portfolio', viewsRoutes);
 app.use('/contact', viewsRoutes);
+
 
 
 module.exports = app;

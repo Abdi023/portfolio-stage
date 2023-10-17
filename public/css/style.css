@@ -184,6 +184,8 @@ body {
 .portfolio__cards {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .portfolio__cardUL {
   list-style: none;
@@ -210,7 +212,7 @@ body {
   --game-color-almost-sifu: rgba(34, 40, 222, 0.2);
   --game-color-almost-legion: rgba(235, 83, 83, 0.2);
   --game-color-almost-rocket: rgba(19, 126, 213, 0.2);
-  --game-color-almost-miles: rgba(128, 128, 128, 0.2);
+  --game-color-almost-miles: rgba(125, 17, 188, 0.2);
 }
 
 .modal {
@@ -233,7 +235,7 @@ body {
 }
 
 .modal_figure--pakket1 {
-  background: var(--game-color-red);
+  background: var(--game-color-less-sifu);
 }
 
 .modal_figure--pakket2 {
@@ -249,11 +251,11 @@ body {
 }
 
 .modal_figure--pakket5 {
-  background: var(--game-color-aqua);
+  background: var(--game-color-almost-legion);
 }
 
 .modal_figure--pakket6 {
-  background: var(--game-color-pink);
+  background: var(--game-color-almost-miles);
 }
 
 .modal_image {
@@ -280,13 +282,13 @@ body {
 }
 
 .modal_text {
-  font-size: 70%;
+  font-size: 82%;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .modal_link {
-  font-size: 70%;
+  font-size: 80%;
 }
 
 .modal_button {
@@ -303,7 +305,7 @@ body {
 }
 
 .modal_button--pakket1 {
-  background: var(--game-color-red);
+  background: var(--game-color-less-sifu);
 }
 
 .modal_button--pakket2 {
@@ -319,11 +321,11 @@ body {
 }
 
 .modal_button--pakket5 {
-  background: var(--game-color-aqua);
+  background: var(--game-color-almost-legion);
 }
 
 .modal_button--pakket6 {
-  background: var(--game-color-pink);
+  background: var(--game-color-almost-miles);
 }
 
 .modal_button:hover {
@@ -370,11 +372,11 @@ body {
 }
 
 .product--pakket5:after {
-  background: var(--game-color-less-rocket);
+  background: var(--game-color-almost-legion);
 }
 
 .product--pakket6:after {
-  background: var(--game-color-less-legion);
+  background: var(--game-color-almost-miles);
 }
 
 .product_figure {
@@ -431,7 +433,7 @@ body {
 }
 
 .product_figure--pakket6:after {
-  background: var(--game-color-almost-sifu);
+  background: var(--game-color-almost-miles);
 }
 
 .product_image {
@@ -449,7 +451,7 @@ body {
 }
 
 .product_section--pakket1 {
-  background: var(--game-color-red);
+  background: var(--game-color-less-sifu);
 }
 
 .product_section--pakket2 {
@@ -465,11 +467,11 @@ body {
 }
 
 .product_section--pakket5 {
-  background: var(--game-color-pink);
+  background: var(--game-color-almost-legion);
 }
 
 .product_section--pakket6 {
-  background: var(--game-color-aqua);
+  background: var(--game-color-almost-miles);
 }
 
 .product_button {
@@ -566,6 +568,7 @@ body {
   height: 10rem;
   padding-top: 1.5rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   resize: vertical;
 }
 .main .formSection__button {
@@ -580,6 +583,38 @@ body {
 .main .formSection__button:hover {
   background-color: red;
   color: white;
+}
+
+.mainSend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #FFF0F5;
+}
+.mainSend .sender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+.mainSend .sender__success {
+  color: #198754;
+}
+.mainSend .sender__terugButton {
+  width: 14rem;
+  height: 5rem;
+  background: #6610f2;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.mainSend .sender__terugButton:hover {
+  transform: scale(1.04);
 }
 
 .footer {
@@ -608,6 +643,19 @@ body {
   color: black;
 }
 
+@media screen and (max-width: 50rem) {
+  .footer__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .footer__i {
+    font-size: 3rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .nav {
     padding: 3rem;
@@ -653,6 +701,19 @@ body {
   }
   .nav > #nav-check:checked ~ .nav__list {
     height: calc(100vh - 5rem);
+  }
+}
+@media screen and (max-width: 45rem) {
+  .portfolio {
+    padding: 2rem;
+  }
+  .portfolio__cardUL {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
   }
 }
 
